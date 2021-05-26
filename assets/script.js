@@ -84,6 +84,8 @@ function getPrognostication(location) {
       console.log(index);
       console.log(day.main.temp);
       console.log(day.main.humidity);
+      console.log(day.wind.speed);
+      console.log(day.pop);
       
       let container = $("<div>");
       container.addClass("col");
@@ -104,6 +106,16 @@ function getPrognostication(location) {
         .text("Humid: " + day.main.humidity)
         .addClass("humidity");
       container.append(predictionHumid);
+
+      let predictionWindSpeed = $("<p>")
+        .text("Wind: " + day.wind.speed + "MPH")
+        .addClass("windSpeed");
+      container.append(predictionWindSpeed);
+
+      let predictionChance = $("<p>")
+        .text("Chance: " + day.pop + "%")
+        .addClass("precipitation");
+      container.append(predictionChance);
       
       $(".forecastWeather-section").append(container);
     });
