@@ -13,6 +13,8 @@ Pseudo Code on script.js file has more info on how functions & if/else statement
 
 style.css file has info on location of gif I used as background in addition to color scheme.
 
+Link: https://barrelbrenner.github.io/weather-dashboard/
+
 Any questions/comments feel free.
 
 Thank you for your time & take care.
